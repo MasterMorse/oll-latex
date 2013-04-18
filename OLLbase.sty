@@ -33,6 +33,15 @@
 % XeLaTeX (or possibly LuaLaTeX)
 \RequirePackage{lilyglyphs}
 
+% fontspec base settings
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+\setmonofont{Inconsolata}
+
+\defaultfontfeatures{%
+	Mapping=tex-text,
+}
+
 % Individual parts of the books (e.g. tutorials or separate parts of
 % documentation are organized as 'subfiles'
 \RequirePackage{subfiles}
@@ -92,6 +101,13 @@
 
 % Enable the drawing of directory tree graphs
 \RequirePackage{dirtree}
+
+% Enhanced table commands
+\RequirePackage{booktabs}
+
+% Enhanced lists
+\RequirePackage{mdwlist}
+\RequirePackage{paralist}
 
 % Let \chapter restart its numbering after \part
 \makeatletter
