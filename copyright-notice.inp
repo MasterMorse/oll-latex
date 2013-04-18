@@ -2,25 +2,28 @@
 % Copyright notice for openLilyLib documents %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent Copyright \copyright{} 2012--13 Urs Liska
+\noindent Copyright \copyright{} 2012--13 Urs Liska and others
 
 \medskip
 \hrule
 
-% FDL (for this document)
+% CC (for this document)
 \begin{quote}
-Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.3
-or any later version published by the Free Software Foundation;
-with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.\\
-A copy of the license is included in \fref{subsubsec:fdl}, entitled “GNU Free Documentation License”.
+\openlilylib{} is a collaborative and free software and documentation project.
+All contributions are copyright by their attributed authors.
+
+If not stated otherwise all creative content distributed by the \openlilylib{} project is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
+To view a copy of this license, visit\\
+\url{http://creativecommons.org/licenses/by-sa/3.0/}.
+
 \end{quote}
+
 
 \hrule
 
 % GPL (for the package)
 \begin{quote}
-openLilyLib is free software: you can redistribute it and/or modify  
+All software that is part of \openlilylib{} is free software: you can redistribute it and/or modify  
 it under the terms of the GNU General Public License as published by  
 the Free Software Foundation, either version 3 of the License, or     
 (at your option) any later version.         
