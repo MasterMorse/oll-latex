@@ -38,6 +38,12 @@
 	\title{#1}
 }
 
+% Message if no author of the bookpart is given
+\newcommand{\nopartauthor}{%
+	Undefined author of bookpart\\
+	Please use the optional argument\\
+	of \cmd{parttitle}
+}
 
 % Conditionally include copyright notice and the full licenses
 % This combination of commands checks if the active document class
@@ -51,9 +57,9 @@
 \newcommand{\includelicensepart}{}
 \newcommand{\includelicensechapter}{}
 \newcommand{\includelicensesection}{}
-\newcommand{\parttitle}[1]{\part{#1}}
-\newcommand{\chaptertitle}[1]{\chapter{#1}}
-\newcommand{\sectiontitle}[1]{\section{#1}}
+\newcommand{\parttitle}[2][\nopartauthor]{\part{#2 \rmfamily\textit{(#1)}}}
+\newcommand{\chaptertitle}[2][\nopartauthor]{\chapter{#2 \rmfamily\textit{(#1)}}}
+\newcommand{\sectiontitle}[2][\nopartauthor]{\section{#2 \rmfamily\textit{(#1)}}}
 
 % Check if we're in a subfile and set a flag
 \makeatletter
@@ -82,7 +88,7 @@
 % Define the commands that should be executed
 % when compiled from within a subfile
 
-\newcommand{\doctitleifsub}[2]{%
+\newcommand{\doctitleifsub}[3]{%
 	\thispagestyle{empty}
 	\begin{center}
 		\sffamily This document is part of \textbf{\openlilylib}%
@@ -97,6 +103,11 @@
 		
 		\bigskip
     	\Huge\textsf{\textbf{#2}}
+    	
+    	\bigskip
+    	\rmfamily
+    	\Large
+    	\textbf{#3}
     \end{center}
     \phantomsection
     \addcontentsline{toc}{#1}{#2}%
@@ -108,9 +119,9 @@
 }
 
 % call the in-subfile document title with the appropriate sectioning info
-\newcommand{\parttitleifsub}[1]{\doctitleifsub{part}{#1}}
-\newcommand{\chaptertitleifsub}[1]{\doctitleifsub{chapter}{#1}}
-\newcommand{\sectiontitleifsub}[1]{\doctitleifsub{section}{#1}}
+\newcommand{\parttitleifsub}[2]{\doctitleifsub{part}{#1}{#2}}
+\newcommand{\chaptertitleifsub}[2]{\doctitleifsub{chapter}{#1}{#2}}
+\newcommand{\sectiontitleifsub}[2]{\doctitleifsub{section}{#1}{#2}}
 
 % If we _are_ in a subfile
 % then redefine the respective commands
@@ -125,7 +136,7 @@
 			\renewcommand{\includelicensesection}{%
 				\section{Licenses}
 				\input{licenses.inp}}
-			\renewcommand{\parttitle}[1]{\parttitleifsub{#1}}
-			\renewcommand{\chaptertitle}[1]{\chaptertitleifsub{#1}}
-			\renewcommand{\sectiontitle}[1]{\sectiontitleifsub{#1}}
+			\renewcommand{\parttitle}[2][\nopartauthor]{\parttitleifsub{#2}{#1}}
+			\renewcommand{\chaptertitle}[2]{\chaptertitleifsub{#2}{#1}}
+			\renewcommand{\sectiontitle}[2]{\sectiontitleifsub{#2}{#1}}
 }{}
