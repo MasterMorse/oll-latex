@@ -112,3 +112,18 @@
 
 \smallskip
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Listings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define listing style for colored diffs
+\definecolor{diffstart}{named}{gray}
+\definecolor{diffincl}{named}{green}
+\definecolor{diffrem}{named}{red}
+\lstdefinelanguage{diff}{
+    basicstyle=\ttfamily\small,
+    morecomment=[f][\color{diffstart}]{@@},
+    morecomment=[f][\color{diffincl}]{+\ },
+    morecomment=[f][\color{diffrem}]{-\ },
+}

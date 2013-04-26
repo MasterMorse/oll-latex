@@ -113,6 +113,13 @@
 \@addtoreset{chapter}{part}
 \makeatother  
 
+% Typeset listings
+% (Special styles defined in OLLstyles.sty)
+\RequirePackage{listings}
+% Format listings with typewriter font by default
+\lstset{
+    frame=single,
+    basicstyle=\ttfamily\small}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Options for use of hyperlinks
