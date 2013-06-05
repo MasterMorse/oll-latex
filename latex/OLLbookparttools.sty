@@ -109,8 +109,6 @@
     	\Large
     	\textbf{#3}
     \end{center}
-    \phantomsection
-    \addcontentsline{toc}{#1}{#2}%
     \markboth{#2}{#2}%
     
     \vspace{4cm}
@@ -120,9 +118,9 @@
 	\vfill
     
     \copyrightnotice
-    
-    \vfill
-    \pagebreak
+        
+    \tableofcontents
+    \clearpage
 }
 
 % call the in-subfile document title with the appropriate sectioning info
