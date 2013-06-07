@@ -48,6 +48,10 @@
 % documentation are organized as 'subfiles'
 \RequirePackage{subfiles}
 
+% Do not restart footnote numbering for each chapter
+\RequirePackage{chngcntr}
+\counterwithout*{footnote}{chapter}
+
 % Extended boxes
 \RequirePackage{fancybox}
 
