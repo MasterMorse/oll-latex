@@ -30,12 +30,10 @@ the Free Software Foundation, either version 3 of the License, or
   
 This explicitely also applies for any code examples that may be part of this manual.
                                                                         
-This program is distributed in the hope that it will be useful,       
-but WITHOUT ANY WARRANTY; without even the implied warranty of        
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          
-GNU General Public License for more details.                          
-
-A copy of the license is included in \fref{subsubsec:gpl}, entitled “GNU
-General Public License”.
+This program or source code is distributed in the hope that it will be useful,       
+but \textsc{without any warranty}; without even the implied warranty of        
+\textsc{merchantability} or \textsc{fitness for a particular purpose}. 
+To view a copy of this license, visit\\
+\url{http://www.gnu.org/licenses/gpl.html}.
 
 \end{quote}
