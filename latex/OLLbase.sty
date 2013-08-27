@@ -26,11 +26,15 @@
 \NeedsTeXFormat{LaTeX2e} 
 \ProvidesPackage{OLLbase}
 
+\RequirePackage{fontspec}
+
 % fontspec base settings
 \defaultfontfeatures{%
 	Ligatures=TeX
 }
-\setmainfont{Linux Libertine O}
+\setmainfont[%
+	Numbers=OldStyle,
+	]{Linux Libertine O}
 %\setsansfont{Linux Biolinum O}
 \setsansfont[Scale=MatchLowercase,ItalicFont=LinBiolinumOI,BoldFont=LinBiolinumOB]{LinBiolinumO}
 \setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
@@ -38,6 +42,8 @@
 % Individual parts of the books (e.g. tutorials or separate parts of
 % documentation are organized as 'subfiles'
 \RequirePackage{subfiles}
+
+\RequirePackage{xcolor}
 
 % Do not restart footnote numbering for each chapter
 \RequirePackage{chngcntr}
