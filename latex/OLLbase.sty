@@ -1,13 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                         %
-%      This file is part of the 'openLilyLib' library.                    %
+%      This file is part of the 'openlilylib' project.                    %
 %                                ===========                              %
 %                                                                         %
-%              https://github.com/lilyglyphs/openLilyLib                  %
+%              https://github.com/openlilylib                             %
 %                                                                         %
-%  Copyright 2012-13 by Urs Liska, lilyglyphs@ursliska.de                 %
+%  Copyright 2012-14 by Urs Liska, ul@openlilylib.org                     %
 %                                                                         %
-%  'openLilyLib' is free software: you can redistribute it and/or modify  %
+%  This file is free software: you can redistribute it and/or modify      %
 %  it under the terms of the GNU General Public License as published by   %
 %  the Free Software Foundation, either version 3 of the License, or      %
 %  (at your option) any later version.                                    %
