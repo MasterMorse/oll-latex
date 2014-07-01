@@ -28,7 +28,7 @@
 \ProvidesClass{OLLbook}
 
 % Use the KOMA-script book class as the base class
-\LoadClass[oneside]{scrbook}
+\LoadClassWithOptions{scrbook}
 
 % Include the basic options that are common to OLL documents
 \RequirePackage{OLLbase}
