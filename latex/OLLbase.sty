@@ -26,8 +26,9 @@
 \NeedsTeXFormat{LaTeX2e} 
 \ProvidesPackage{OLLbase}
 
+% We use fontspec so any documents have to be compiled
+% with lualatex (preferred) or xelatex
 \RequirePackage{fontspec}
-
 % fontspec base settings
 \defaultfontfeatures{%
 	Ligatures=TeX
@@ -35,9 +36,13 @@
 \setmainfont[%
 	Numbers=OldStyle,
 	]{Linux Libertine O}
-%\setsansfont{Linux Biolinum O}
 \setsansfont[Scale=MatchLowercase,ItalicFont=LinBiolinumOI,BoldFont=LinBiolinumOB]{LinBiolinumO}
 \setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+
+% Enable microtypographic features
+\RequirePackage{microtype}
+\RequirePackage[english]{selnolig}
+\frenchspacing
 
 \RequirePackage{xcolor}
 
