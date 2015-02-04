@@ -50,12 +50,6 @@
 % documentation are organized as 'subfiles'
 \RequirePackage{subfiles}
 
-\RequirePackage{xcolor}
-
-% Do not restart footnote numbering for each chapter
-\RequirePackage{chngcntr}
-\counterwithout*{footnote}{chapter}
-
 % Extended boxes
 \RequirePackage{fancybox}
 
@@ -115,43 +109,8 @@
 % End fancyref
 %%%%%%%%%%%%%%%%%%
 
-% Enable the use of colors
-\RequirePackage{color}
-
-% Enable import of images
-\RequirePackage{graphicx}
-
 % Enable the drawing of directory tree graphs
 \RequirePackage{dirtree}
-
-% Enhanced table commands
-\RequirePackage{booktabs}
-
-% Enhanced lists
-\RequirePackage{mdwlist}
-\RequirePackage{paralist}
-
-% Let \chapter restart its numbering after \part
-\makeatletter
-\@addtoreset{chapter}{part}
-\makeatother  
-
-% Typeset listings
-% (Special styles defined in OLLstyles.sty)
-\RequirePackage{listings}
-% Format listings with typewriter font by default
-\lstset{
-    frame=single,
-    basicstyle=\fontspec{Liberation Mono}\footnotesize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Options for use of hyperlinks
-% (make sure this is included last)
-\RequirePackage[%
-	colorlinks,
-	urlcolor=blue,
-	bookmarks=true,
-	bookmarksnumbered=true]{hyperref}
 
 % Conditional commands for sections etc. in subfiles or main books
 \RequirePackage{OLLbookparttools}
